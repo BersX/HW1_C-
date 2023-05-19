@@ -61,35 +61,35 @@
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
 
-Console.WriteLine("Введите число");
-int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число");
+// int rows = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите число");
-int columns = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число");
+// int columns = Convert.ToInt32(Console.ReadLine());
 
-int [,] array =new  int [rows,columns];
+// int [,] array =new  int [rows,columns];
 
-for (int i = 0; i < array.GetLength(0); i++)
-{
-    for (int j = 0; j < array.GetLength(1); j++)
-    {
-       array[i,j] = new Random().Next(0,10);
-       Console.Write(array[i,j] + "  ");
-    }
-    Console.WriteLine();
-}
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+//     for (int j = 0; j < array.GetLength(1); j++)
+//     {
+//        array[i,j] = new Random().Next(0,10);
+//        Console.Write(array[i,j] + "  ");
+//     }
+//     Console.WriteLine();
+// }
 
-double summ = 0;
+// double summ = 0;
 
-for (int j = 0; j < array.GetLength(1); j++)
-{
-    for (int i = 0; i < array.GetLength(0); i++) 
-    {
-       summ = summ + array[j,i]; 
-       break;         
-    }
-}
-Console.WriteLine("Среднее арифметическое 1 столбца: " + summ/array.GetLength(1));
+// for (int j = 0; j < array.GetLength(1); j++)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++) 
+//     {
+//        summ = summ + array[j,i]; 
+//        break;         
+//     }
+// }
+// Console.WriteLine("Среднее арифметическое 1 столбца: " + summ/array.GetLength(1));
 
 
 
